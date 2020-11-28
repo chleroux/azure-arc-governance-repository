@@ -9,7 +9,7 @@ metadata:
   name: governance-arc
   namespace: governance
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 8080
