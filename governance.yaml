@@ -6,7 +6,7 @@ metadata:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-arc
+  name: governance-arc
   namespace: governance
 spec:
   type: ClusterIP
@@ -14,22 +14,22 @@ spec:
   - port: 80
     targetPort: 8080
   selector:
-    app: hello-arc
+    app: governance-arc
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-arc
+  name: governance-arc
   namespace: governance
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello-arc
+      app: governance-arc
   template:
     metadata:
       labels:
-        app: hello-arc
+        app: governance-arc
     spec:
       containers:
       - name: hello-arc
