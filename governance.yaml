@@ -39,3 +39,5 @@ spec:
         env:
         - name: MESSAGE
           value: &&&&& This is an Azure Arc GitOps Demo!
+        - name: TEST-ENV
+          value: myTest-ENV
