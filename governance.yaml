@@ -22,7 +22,7 @@ metadata:
   name: governance-arc
   namespace: governance
 spec:
-  replicas: 10
+  replicas: 1
   selector:
     matchLabels:
       app: governance-arc
@@ -38,6 +38,6 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: &&&&& This is an Azure Arc GitOps Demo!
+          value: 44 This is an Azure Arc GitOps Demo!
         - name: TEST-ENV
           value: myTest-ENV
